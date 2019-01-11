@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class QueueBuilder {
     private int head = 0, tail = 0;
     private int[] queue;
+    private int size;
 
     public QueueBuilder() {
         this(10);
@@ -26,6 +27,7 @@ public class QueueBuilder {
         if (tail == head) {
             resize();
         }
+        size ++;
     }
 
     public int pop() {
@@ -37,6 +39,7 @@ public class QueueBuilder {
         if (head >= queue.length) {
             head = head % queue.length;
         }
+        size --;
         return result;
     }
 
@@ -46,6 +49,14 @@ public class QueueBuilder {
         } else {
             return false;
         }
+    }
+
+    public int getSize(){
+        return size;
+    }
+
+    public int getLength(){
+        return queue.length;
     }
 
     /*扩容*/

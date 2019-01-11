@@ -1,18 +1,20 @@
 package stackStudy;
 
 public class StackTest {
-    StackConstruct stack;
+    QueueStack stack;
 
     public StackTest() {
-        stack = new StackConstruct();
+        stack = new QueueStack();
     }
 
     public void test() {
         stack.push(1);
         stack.push(2);
-        print(stack.length());
-        print(stack.peek());
+        stack.push(3);
         print(stack.pop());
+        stack.push(4);
+        stack.push(5);
+        print(stack.size());
         print(stack.pop());
         print(stack.pop());
     }

@@ -5,13 +5,19 @@ public class QueueTest {
     }
 
     public void test() {
-        QueueBuilder queue = new QueueBuilder();
+        StackQueue queue = new StackQueue();
         queue.push(1);
         queue.push(2);
         queue.push(3);
         queue.push(4);
+        print(queue.pop());
         queue.push(5);
         queue.push(6);
+        print(queue.pop());
+        print(queue.pop());
+        print(queue.pop());
+        print(queue.pop());
+        print(queue.pop());
         queue.push(7);
         queue.push(8);
         queue.push(9);

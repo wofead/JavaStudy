@@ -26,17 +26,21 @@ public class StackConstruct {
 
     public int pop() {
         int item = peek();
+        if(item == -1){
+            return -1;
+        }
         size --;
         return item;
     }
 
-    public int length() {
+    public int getSize() {
         return this.size;
     }
 
     public int peek() {
         if(size == 0){
-            throw new IndexOutOfBoundsException("栈里已经空");
+            return -1;
+//            throw new IndexOutOfBoundsException("栈里已经空");
         }
         return array[size - 1];
     }
