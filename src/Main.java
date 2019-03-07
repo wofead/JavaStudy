@@ -1,7 +1,4 @@
 import Chain.StackChainTesi;
-import ChainOfResponsibility.ChainOfResponsibilityTest;
-import CommandMode.CommandTest;
-import FlyWeight.FlyweightTest;
 import QueueConstructor.QueueTest;
 import VisitorMode.VisitorTest;
 import stackStudy.StackTest;
