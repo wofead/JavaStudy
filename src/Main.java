@@ -1,4 +1,7 @@
+import BuilderMode.ModeBuilderTest;
 import Chain.StackChainTesi;
+import DecoratorMode.DecoratorTest;
+import ObserverMode.ObserverTest;
 import QueueConstructor.QueueTest;
 import VisitorMode.VisitorTest;
 import stackStudy.StackTest;
