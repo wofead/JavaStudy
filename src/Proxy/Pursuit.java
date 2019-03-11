@@ -1,6 +1,6 @@
 package Proxy;
 
-public class Pursuit implements IGiveGift {
+public class Pursuit implements IGiveGift,Cloneable {
     private Girl girl;
     public Pursuit(Girl girl){
         this.girl = girl;
@@ -20,7 +20,10 @@ public class Pursuit implements IGiveGift {
         System.out.println("送花给" + girl.getName());
     }
 
-    public Pursuit clone(){
-        return this.clone();
+    public Object clone() throws CloneNotSupportedException{
+//        如果类中有自定义类 也要在自定义类中进行cloneable接口的引用
+//        而且在聚合类的clone函数中进行调用赋值
+//        基本数据类型会进行深拷贝
+       return super.clone();
     }
 }
