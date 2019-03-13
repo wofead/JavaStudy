@@ -9,6 +9,11 @@ package Algorithm.FibonacciAlgorithm;
 public class FabonacciTest {
     public void fabo(){
         Fibonacci fibonacci = new Fibonacci();
-        System.out.println(fibonacci.fibonacciAl(6));
+        System.out.println(fibonacci.fibonacciAl(8));
+    }
+
+    public void imFabo(){
+        FibonacciImprome fibonacci = new FibonacciImprome();
+        System.out.println(fibonacci.fibonacciAl(8));
     }
 }
