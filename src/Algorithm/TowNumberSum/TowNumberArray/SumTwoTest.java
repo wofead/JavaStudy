@@ -1,4 +1,4 @@
-package Algorithm.TowNumberSum;
+package Algorithm.TowNumberSum.TowNumberArray;
 
 /**
  * @Author: jow

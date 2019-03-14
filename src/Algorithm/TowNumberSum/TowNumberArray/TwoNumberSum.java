@@ -1,4 +1,4 @@
-package Algorithm.TowNumberSum;
+package Algorithm.TowNumberSum.TowNumberArray;
 
 
 import java.util.Arrays;
