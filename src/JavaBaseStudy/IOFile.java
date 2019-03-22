@@ -81,4 +81,25 @@ public class IOFile {
         }
     }
 
+//    数据输入输出流
+    public void dataInputTest(){
+        try {
+            FileOutputStream fileOutputStream = new FileOutputStream("./word.text");
+            DataOutputStream dataOutputStream = new DataOutputStream(fileOutputStream);
+            dataOutputStream.writeUTF("use UTF write date");
+            dataOutputStream.writeChars("use chars write data");
+            dataOutputStream.writeBytes("use bytes write data");
+            dataOutputStream.close();
+            fileOutputStream.close();
+            FileInputStream fileInputStream = new FileInputStream("./word.text");
+            DataInputStream dataInputStream = new DataInputStream(fileInputStream);
+            System.out.println( dataInputStream.readUTF());
+//            每次只能读取出来一个字符
+            System.out.println( dataInputStream.readChar());
+            System.out.println( dataInputStream.readByte());
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
 }
