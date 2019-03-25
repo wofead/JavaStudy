@@ -1,4 +1,4 @@
-package JavaBaseStudy;
+package JavaBaseStudy.IOStudy;
 
 import java.io.*;
 import java.util.zip.ZipEntry;

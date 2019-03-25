@@ -1,10 +1,9 @@
-import Algorithm.ContinuousNotSameStr.StringOfNotSameTest;
-import Algorithm.TowNumberSum.TwoNumberSumChain.TwoNumberSumTest;
+import JavaBaseStudy.ReflectIonStudy.ReflectionTest;
 
 public class Main {
 
     public static void main(String[] args) {
-        StringOfNotSameTest bubleSortTest = new StringOfNotSameTest();
+        ReflectionTest bubleSortTest = new ReflectionTest();
         bubleSortTest.test();
     }
 
